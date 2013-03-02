@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+.jumbotron h1 {
+  font-family: Playfair Display;
+  /*color: #CCFFFF;*/
+}
+
+body {
+  font-family: Muli;
+  padding-top: 60px;
+  background-color: none;
+  color: #27927d;
+}
