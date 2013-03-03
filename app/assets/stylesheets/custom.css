@@ -1,15 +1,100 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+/*@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 
-@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Muli);*/
 
-.jumbotron h1 {
-  font-family: Playfair Display;
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+.hero-unit h1 {
+  font-family: Dancing Script;
   /*color: #CCFFFF;*/
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 body {
-  font-family: Muli;
+  font-family: Josefin Sans;
   padding-top: 60px;
-  background-color: none;
+  background-color: #ECEBED;
   color: #27927d;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/*Top navigation*/
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+color: #ffffff;
+background-color: #E56E6A;
+}
+
+a {
+color: #E56E6A;
+text-decoration: none;
+}
+
+a:hover {
+  color: #27927d;
+}
+
+h3.muted a:hover {
+  color: #27927d;
+  text-decoration: none;
+}
+
+/*a:hover {
+  color: ;
+}*/
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #999999;
+    margin: 1em 0; padding: 0; }
+
+/* Main marketing message and sign up button */
+.hero-unit h1 {
+  font-size: 72px;
+  line-height: 1;
+  color: #ECEBED;
+  background-color: #E56E6A;
+}
+
+.hero-unit {
+  font-size: 72px;
+  line-height: 1;
+  color: #ECEBED;
+  background-color: #E56E6A;
+}
+
+/*.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+  background-color: #E56E6A;
+  color: #F1F1F1;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}*/
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+  color: #66626B;
+}
+.marketing p {
+  margin-top: 28px;
+  color: #999999;
 }

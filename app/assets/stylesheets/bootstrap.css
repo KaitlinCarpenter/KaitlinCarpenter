@@ -208,8 +208,8 @@ body {
   font-family: Muli;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #f1f1f1;
+  color: #66626b;
+  background-color: #3b3640;
 }
 a {
   color: #0088cc;
@@ -978,7 +978,7 @@ table {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #f1f1f1;
+  background-color: #3b3640;
 }
 .table-condensed th,
 .table-condensed td {
@@ -1723,7 +1723,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #595959;
+  color: #8c8892;
 }
 .help-block {
   display: block;
@@ -1808,8 +1808,8 @@ select:focus:invalid:focus {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #d8efea;
-  border-color: #6bc3b0;
+  background-color: #e5f2cd;
+  border-color: #a7d155;
 }
 .input-prepend .add-on,
 .input-prepend .btn {
@@ -3209,7 +3209,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
   color: #555555;
-  background-color: #f1f1f1;
+  background-color: #3b3640;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
