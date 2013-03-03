@@ -15,8 +15,8 @@
 body {
   font-family: Josefin Sans;
   padding-top: 60px;
-  background-color: #ECEBED;
-  color: #27927d;
+  background-color: #1a1a1a;
+  color: #999999;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -32,9 +32,14 @@ body {
 }
 
 /*Top navigation*/
-.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
-color: #ffffff;
-background-color: #E56E6A;
+.nav-pills > li > a:hover {
+  color: #27927d;
+  background-color: #000;
+}
+
+.nav-pills > li > a {
+  color: #ffffff;
+  background-color: #2a2a2a;
 }
 
 a {
@@ -45,6 +50,7 @@ text-decoration: none;
 a:hover {
   color: #27927d;
   text-decoration: none;
+  background-color: none;
 }
 
 h3.muted a:hover {
@@ -64,15 +70,14 @@ hr { display: block; height: 1px;
 .hero-unit h1 {
   font-size: 72px;
   line-height: 1;
-  color: #ECEBED;
-  background-color: #E56E6A;
+  color: #ff6666;
 }
 
 .hero-unit {
   font-size: 72px;
   line-height: 1;
-  color: #ECEBED;
-  background-color: #E56E6A;
+  color: #f2f2f2;
+  background-color: #2a2a2a;
 }
 
 /*.jumbotron {
@@ -92,10 +97,28 @@ hr { display: block; height: 1px;
 
 /* Supporting marketing content */
 .marketing {
-  margin: 60px 0;
+  margin: 25px 0;
   color: #66626B;
 }
+
+.marketing h4:nth-child(1),
+.marketing h4:nth-child(2) {
+  margin-top: 0px;
+}
+
 .marketing p {
-  margin-top: 28px;
+  margin-top: 10px;
+  margin-bottom: 0;
   color: #999999;
 }
+
+.marketing h4 {
+  margin-top: 30px;
+}
+
+/*Sub page containers*/
+
+h2, h3, h4 {
+ color: #66626B;
+}
+
