@@ -7,19 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
   <div class="container-narrow">
 
     <div class="masthead">
       <ul class="nav nav-pills pull-right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li class='<%= "active" if @active == :index %>'><a href="/">Hello</a></li>
+        <li class='<%= "active" if @active == :about %>'><a href="/about">About Me</a></li>
+        <li class='<%= "active" if @active == :contact %>'><a href="/contact">Contact me!</a></li>
       </ul>
       <h3 class="muted">
-    <a href="https://twitter.com/suchthekaitlin"><i class="icon-twitter"></i> suchthekaitlin</a>
+    <a class="twitter-link" href="https://twitter.com/suchthekaitlin"><i class="icon-twitter"></i> suchthekaitlin</a>
     <a href="http://www.linkedin.com/in/kaitlincarpenter"><i class="icon-linkedin"></i> </a>
-    <a href="http://pinterest.com/suchthekaitlin/my-work-contributions/"><i class="icon-pinterest"></i> </a>
+    <a href="http://pinterest.com/suchthekaitlin"><i class="icon-pinterest"></i> </a>
     <a href="http://www.facebook.com/SuchtheKaitlin"><i class="icon-facebook"></i> </a>
 
       </h3>
@@ -28,7 +27,7 @@
     <%= yield %>
     <hr>
     <div class="footer">
-      <p>Kaitlin Carpenter</p>
+      <p>This site may not always be perfect - I'm building it to learn and it's a constant work-in-progress.</p>
     </div>
   </div>
 </body>

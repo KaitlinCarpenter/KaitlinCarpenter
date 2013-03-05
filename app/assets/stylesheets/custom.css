@@ -33,7 +33,7 @@ body {
 
 /*Top navigation*/
 .nav-pills > li > a:hover {
-  color: #27927d;
+  color: #E56E6A;
   background-color: #000;
 }
 
@@ -42,6 +42,10 @@ body {
   background-color: #2a2a2a;
 }
 
+.twitter-link
+{
+  min-width: 180px;
+}
 a {
 color: #E56E6A;
 text-decoration: none;
@@ -76,6 +80,7 @@ hr { display: block; height: 1px;
 .hero-unit {
   font-size: 72px;
   line-height: 1;
+  text-align: center;
   color: #f2f2f2;
   background-color: #2a2a2a;
 }
