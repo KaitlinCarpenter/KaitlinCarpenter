@@ -1,0 +1,18 @@
+@media (max-width: 340px) {
+  .masthead .nav {
+    width: 100%;
+    padding-left: 9%;
+    float: none;
+  }
+  .hero-unit {
+    padding: 30px;
+  }
+  .hero-unit h1 {
+    font-size: 50px;
+    margin: 0 auto;
+  }
+  .hero-unit p {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
