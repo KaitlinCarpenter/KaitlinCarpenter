@@ -11,4 +11,7 @@ class ApplicationController < ActionController::Base
   def contact
     @active = :contact
   end
+
+  def kittenspiration
+  end
 end
