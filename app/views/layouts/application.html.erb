@@ -9,7 +9,9 @@
 </head>
 <body>
   <div class="container-narrow">
-
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+    <% end %>
     <div class="masthead">
       <ul class="nav nav-pills pull-right">
         <li class='<%= "active" if @active == :index %>'><a href="/">Hello</a></li>
@@ -28,7 +30,19 @@
     <%= yield %>
     <hr>
     <div class="footer">
-      <p>This site may not always be perfect - I'm building it to learn and it's a constant work-in-progress.</p>
+      <p>This site may not always be perfect - I'm building it to learn and it's a constant work-in-progress.
+      </p>
+      <p>
+        <% if user_signed_in? %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+          -
+          <%= link_to "Profile", edit_user_registration_path %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path %>
+          -
+          <%= link_to "Sign in", new_user_session_path %>
+        <% end %>
+      </p>
     </div>
   </div>
 </body>

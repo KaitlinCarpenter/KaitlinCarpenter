@@ -1,4 +1,9 @@
 KaitlinCarpenter::Application.routes.draw do
+  devise_for :users
+
+  resources :pins
+
+
   root :to => 'application#index'
   match "/about" => 'application#about'
   match "/contact" => 'application#contact'
