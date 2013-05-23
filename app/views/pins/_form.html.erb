@@ -13,9 +13,9 @@
 
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description, :cols => "25", :rows => "5" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :submit, class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -1,13 +1,12 @@
 KaitlinCarpenter::Application.routes.draw do
   devise_for :users
 
-  resources :pins
+  resources :pins, :path => 'kittenspiration'
 
 
   root :to => 'application#index'
   match "/about" => 'application#about'
   match "/contact" => 'application#contact'
-  match "/kittenspiration" => 'application#kittenspiration'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
