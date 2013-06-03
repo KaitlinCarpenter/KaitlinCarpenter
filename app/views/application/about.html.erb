@@ -1,7 +1,16 @@
+<script>
+$(document).ready(function(){
+  var hash = window.location.hash;
+  if(hash == '#tab2') {
+    $('li a.blog').click();
+  }
+});
+</script>
+
 <div class="tabbable tabs-left">
   <ul class="nav nav-tabs">
     <li class="active"><a href="#tab1" data-toggle="tab">All About Me</a></li>
-    <li><a href="#tab2" data-toggle="tab">Blogs&Articles</a></li>
+    <li><a class='blog' href="#tab2" data-toggle="tab">Blogs&Articles</a></li>
     <li><a href="#tab3" data-toggle="tab">Current Work</a></li>
   </ul>
   <div class="tab-content">
