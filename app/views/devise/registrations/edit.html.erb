@@ -2,9 +2,7 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form' }) do |f| %>
   <%= f.error_notification %>
 
-  <div><%= f.label :name %>
-  <%= f.text_field :name %></div>
-
+  <%= f.input :name %>
   <%= f.input :email %>
   <%= f.input :password, label: "New Password", autocomplete: "off" %>
   <%= f.input :password_confirmation, label: "New Password Confirmation", autocomplete: "off" %>

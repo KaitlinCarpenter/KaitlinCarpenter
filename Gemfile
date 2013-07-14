@@ -9,6 +9,7 @@ gem "paperclip", "~> 3.0"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
+  gem 'pry'
   gem 'sqlite3'
 end
 

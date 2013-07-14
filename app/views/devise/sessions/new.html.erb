@@ -2,9 +2,7 @@
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form' }) do |f| %>
 
-  <div><%= f.label :name %>
-  <%= f.text_field :name %></div>
-
+  <%= f.input :name %>
   <%= f.input :email %>
   <%= f.input :password %>
   <%= f.input :remember_me, as: :boolean %>
