@@ -25,7 +25,7 @@ body {
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 710px;
 }
 .container-narrow > hr {
   margin: 30px 0;
@@ -139,3 +139,49 @@ h2, h3, h4 {
  color: #66626B;
 }
 
+/* For adding pins */
+
+.kittenspirations,
+.add-pin {
+  float: left;
+}
+
+.add-pin {
+  margin-top:1.5em;
+  margin-left:2.0em;
+}
+
+.all-pins {
+  clear:both;
+}
+
+.pin-description {
+  margin: 10px 0px 5px;
+}
+
+.show-pin {
+   margin:0 auto;
+   float:none;
+}
+
+/* Required for jQuery Masonry */
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  font-size: 11px;
+  line-height: 1.4em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #444;
+  width: 214px;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

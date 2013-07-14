@@ -1,21 +1,15 @@
-<h1>Kittenspirations</h1>
-
-<table class="table">
-    <thead>
-      <tr>
-        <th>Image</th>
-        <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-  </thead>
-
-  <tbody>
+<div>
+  <div class='kittenspirations'>
+    <h1>Kittenspirations</h1>
+  </div>
+  <div class='add-pin'>
+    <% if user_signed_in? %>
+    <%= link_to "Add +", new_pin_path %>
+    <% end %>
+  </div>
+</div>
+<div class='all-pins'>
+  <div id="pins">
     <%= render @pins %>
-  </tbody>
-</table>
-
-<br />
-
-<%= link_to 'New Pin', new_pin_path %>
+  </div>
+</div>

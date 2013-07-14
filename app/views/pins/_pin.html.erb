@@ -1,7 +1,10 @@
-<tr>
-  <td><%= image_tag pin.image(:medium) %></td>
-  <td><%= pin.description %></td>
-  <td><%= link_to 'Show', pin %></td>
-  <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
-  <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+<div class="box">
+  <%= link_to (image_tag pin.image(:medium)), pin %>
+  <p class="pin-description">
+  	<%= pin.description %>
+  </p>
+  <p>
+ 	<%= link_to 'Edit', edit_pin_path(pin) %>
+  	<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+</div>
