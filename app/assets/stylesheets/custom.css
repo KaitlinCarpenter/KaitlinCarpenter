@@ -157,11 +157,13 @@ h2, h3, h4 {
 
 .pin-description {
   margin: 10px 0px 5px;
+  font-size: medium;
 }
 
 .show-pin {
    margin:0 auto;
    float:none;
+   font-size: medium;
 }
 
 /* Required for jQuery Masonry */
